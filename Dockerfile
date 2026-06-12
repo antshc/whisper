@@ -10,4 +10,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Install Python deps
 # (openai-whisper pulls torch; can be heavy on CPU images)
 RUN pip install --no-cache-dir -U pip \
- && pip install --no-cache-dir openai-whisper
+ && pip install --no-cache-dir -U openai-whisper
